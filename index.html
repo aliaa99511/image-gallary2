@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <div class="parent">
+
+        <div class="big">
+            <img src="images/1.jpg" id="preview">
+        </div>
+
+        <div class="small">
+            <img onclick="sayHi(img1)" name="img1" src="images/1.jpg">
+            <img onclick="sayHi(img2)" name="img2" src="images/2.jpg">
+            <img onclick="sayHi(img3)" name="img3" src="images/3.jpg">
+            <img onclick="sayHi(img4)" name="img4" src="images/4.jpg">
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function sayHi(e){
+            var preview=document.getElementById("preview");
+
+            preview.src=e.src;
+        }
+
+    </script>
+</body>
+</html>
